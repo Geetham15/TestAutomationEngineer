@@ -1,0 +1,12 @@
+package module1.loops.while_loops;
+
+//Write a program to reverse the digits of a number.
+
+public class Reverse_digits_of_number{
+	
+	public static void main(String[] args) {
+		
+
+	}
+
+}

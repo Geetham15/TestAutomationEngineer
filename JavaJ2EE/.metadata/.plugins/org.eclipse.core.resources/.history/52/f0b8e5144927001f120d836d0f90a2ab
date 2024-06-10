@@ -1,0 +1,11 @@
+package module1;
+
+//Write program to perform all the arithmetic operations
+public class ArithmeticOperations {
+
+	public static void main(String[] args) {
+		
+
+	}
+
+}

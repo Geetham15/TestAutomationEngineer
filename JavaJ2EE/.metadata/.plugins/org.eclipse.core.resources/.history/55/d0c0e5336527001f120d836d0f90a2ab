@@ -1,0 +1,10 @@
+package module1.loops.for_loops;
+
+public class Add_digits_of_a_number {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

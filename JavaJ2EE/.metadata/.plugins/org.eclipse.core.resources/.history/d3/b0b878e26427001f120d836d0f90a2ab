@@ -1,0 +1,11 @@
+package module1.loops.for_loops;
+
+//Write a program to generate tables of 10
+public class Tables {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

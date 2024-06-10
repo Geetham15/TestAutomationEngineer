@@ -1,0 +1,11 @@
+package module1.loops.for_loops;
+
+//Write a program to generate 10 Fibonacci numbers.
+public class Fibonacci {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

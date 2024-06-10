@@ -1,0 +1,18 @@
+package co.edureka.java.operators;
+
+public class FormattedOutput {
+
+	public static void main(String[] args) {
+		float sal = 8750.56429f;
+		
+		System.out.println(sal);
+		System.out.printf("%f \n", sal);
+		System.out.printf("%.0f \n", sal);
+		System.out.printf("%.1f \n", sal);
+		System.out.printf("%.2f \n", sal);
+		System.out.printf("%.3f \n", sal);
+		System.out.printf("%.4f \n", sal);
+		System.out.printf("%.5f \n", sal);
+	}
+
+}

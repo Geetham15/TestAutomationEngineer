@@ -1,0 +1,13 @@
+package module1.loops.for_loops;
+
+import java.util.Scanner;
+
+//Write a program to find factorial ofa number.
+public class Factorial {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+	}
+
+}

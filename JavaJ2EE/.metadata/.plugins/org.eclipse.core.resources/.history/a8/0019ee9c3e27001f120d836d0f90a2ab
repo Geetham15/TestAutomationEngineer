@@ -1,0 +1,17 @@
+package module1;
+
+public class DataTypes {
+
+	public static void main(String[] args) {
+		int a = 1, b = 2;
+		float d=1.2f, e=2.2f;
+		
+		int c = a+b;
+		System.out.println("Adding two integers : " + c);
+		
+		float f = e-d;
+		System.out.println("Subtracting two float :" + f);
+
+	}
+
+}
