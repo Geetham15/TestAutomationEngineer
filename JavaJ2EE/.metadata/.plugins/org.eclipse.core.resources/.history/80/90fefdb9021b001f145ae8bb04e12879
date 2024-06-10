@@ -1,0 +1,11 @@
+package co.edureka.java.exception;
+
+//Program to divide a number by another where the numbers are given as command-line arguments
+public class Except4 {
+
+	public static void main(String[] args) {
+		System.out.println("Hello World!");
+
+	}
+
+}

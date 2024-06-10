@@ -1,0 +1,10 @@
+package co.edureka.java.io;
+
+public class WriteFile {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

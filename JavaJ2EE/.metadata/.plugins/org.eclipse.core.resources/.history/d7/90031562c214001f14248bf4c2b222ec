@@ -1,0 +1,13 @@
+package co.edureka.java.strings;
+
+public class Employee {
+	int empno;
+	String name;
+	float sal;
+	public static void main(String[] args) {
+		
+		
+
+	}
+
+}

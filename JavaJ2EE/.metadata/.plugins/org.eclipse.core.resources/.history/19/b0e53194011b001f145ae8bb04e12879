@@ -1,0 +1,11 @@
+package co.edureka.java.exception;
+
+public class Except3 {
+
+	public static void main(String[] args) {
+		String str = "edureka";
+		System.out.println(str);
+		System.out.println(str.length()); //7
+	}
+
+}

@@ -1,0 +1,40 @@
+Download & Install Oracle
+=========================
+Google "download oracle express"
+
+- https://www.oracle.com/database/technologies/xe-prior-release-downloads.html
+- SQL Seveloper for Oracle
+
+Download & Install MySQL with MySQL WorkBench
+========================
+https://dev.mysql.com/downloads/
+> MySQL Installer for Windows
+
+mysql-installer-community-8.0.37.0.msi (296.1 MB)   > Download
+
+
+Install It
+
+Choose a Setup Type : Custom 
+ Expand MySQL Servers (....) and Select : 
+ MySQL Server 8.0 and move/push/select to right side
+ Applications : MySQL Workbench 8.0
+> Next > Ready to Install > Execute
+   
+May ask for installing "Microsoft Visual C++ Redistributable for Visual Studio 2019"
+
+> Next (Product Configuration) - Ready to Configure > Next
+
+Type and Networking > Next
+Authentication Method :  Use Legacy Authentication Method ... > Next
+
+MySQL Root Password: root
+Repeat Password: root
+> Next
+Windows Service Name: MySQL80
+Standard System Account
+> Next
+Apply Configuration
+> Execute
+
+> Finish

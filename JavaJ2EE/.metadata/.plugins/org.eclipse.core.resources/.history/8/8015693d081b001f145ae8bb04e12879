@@ -1,0 +1,10 @@
+package co.edureka.java.exception;
+
+public class FinallyTest {
+
+	public static void main(String[] args) {
+		// TODO Auto-generated method stub
+
+	}
+
+}

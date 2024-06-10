@@ -1,0 +1,40 @@
+package com.edureka.testngtestcases;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.openqa.selenium.WebElement;
+
+import io.appium.java_client.AppiumBy;
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.options.UiAutomator2Options;
+
+public class TestNGAssertExample {
+
+	public static AppiumDriver driver;
+	
+	@BeforeClass
+	public void OpenApp() throws MalformedURLException, InterruptedException {
+		UiAutomator2Options options = new UiAutomator2Options()
+				.setPlatformName("Android")
+				.setDeviceName("emulator-5554")
+				.setAppPackage("io.appium.android.apis")
+				.setAppActivity("io.appium.android.apis.ApiDemos");
+		
+		driver = new AndroidDriver(new URL("https://127.0.0.1:4723"),options);
+	
+		Thread.sleep(3000);
+	}
+
+	@Test
+	public void testAssertions() {
+		WebElement viewButton = driver.findElement(AppiumBy.accessibilityId("Views"));
+		System.out.println(viewButton.isDisplayed());
+	}
+	
+	@AfterClass
+	public void tearDown() {
+		driver.quit();
+	}
+}

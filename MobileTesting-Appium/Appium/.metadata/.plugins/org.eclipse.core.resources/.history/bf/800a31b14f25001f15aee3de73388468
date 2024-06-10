@@ -1,0 +1,5 @@
+package com.appium.testcases;
+
+public class CloudNativeApp {
+
+}

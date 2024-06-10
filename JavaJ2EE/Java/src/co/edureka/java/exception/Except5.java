@@ -1,0 +1,35 @@
+package co.edureka.java.exception;
+
+//Program to divide a number by another where the numbers are given as command-line arguments
+//Run Configurations -> Arguments -> under Program Arguments -> give 10 0
+public class Except5 {
+
+	public static void main(String[] args) {
+		try {
+			int x = Integer.parseInt(args[0]);
+			int y = Integer.parseInt(args[1]);
+			int z = x/y;
+		    System.out.printf("%d / %d = %d\n", x, y, z);	
+		} catch(Exception ex) { 
+			System.out.println("exception occured!!");
+			System.out.println("message = " + ex.getMessage());
+			System.out.println();
+			
+			System.out.println(ex.toString());
+			System.out.println();
+			
+			ex.printStackTrace();
+			System.out.println();
+			
+			if(ex instanceof ArithmeticException) {
+				System.out.println("ArithmeticException Occured");
+			}
+		} 
+		System.out.println("---- done ----");
+	}
+    //child class object is referenced by super class
+}
+
+//java.lang.Throwable
+	//1. Error
+	//2. Exception

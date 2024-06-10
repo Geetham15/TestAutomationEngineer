@@ -1,0 +1,57 @@
+package com.edureka.testngtestcases;
+
+import java.net.MalformedURLException;
+import java.net.URL;
+
+import org.openqa.selenium.WebElement;
+import org.testng.Assert;
+import org.testng.annotations.AfterClass;
+import org.testng.annotations.BeforeClass;
+import org.testng.annotations.Test;
+import org.testng.asserts.SoftAssert;
+
+import io.appium.java_client.AppiumBy;
+import io.appium.java_client.AppiumDriver;
+import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.android.options.UiAutomator2Options;
+
+public class TestNGAssertExample {
+
+	
+
+	@Test
+	public void testAssertions() {
+		WebElement viewButton = driver.findElement(AppiumBy.accessibilityId("Views"));
+		System.out.println(viewButton.isDisplayed());
+		
+		//Normal Java way
+		if(viewButton.isDisplayed()) {
+			System.out.println("In Java it is displayed");
+		}else {
+			System.out.println("In Java it is not displayed");
+		}
+		// using TestNG we can use AssertTrue method to check if the element is displayed.
+		Assert.assertTrue(viewButton.isDisplayed(), "View Button is displayed on the screen");
+		String ExpectedText = "Views123";
+		String ActualText = viewButton.getText();
+		Assert.assertEquals(ActualText, ExpectedText);
+		//This line will not execute if the assertion failed
+		System.out.println("Execute After Assertion Check");
+		
+		viewButton.click();
+		WebElement Buttonoption = driver.findElement(AppiumBy.accessibilityId("Buttons"));
+		SoftAssert a1 = new SoftAssert();
+		a1.assertTrue(Buttonoption.isDisplayed());
+		
+		String ExpectedText1 = "Buttons1";
+		String ActualText1 = Buttonoption.getText();
+		
+		a1.assertEquals(ExpectedText1, ActualText1);
+		System.out.println("Steps execution after soft Assert");
+		
+		driver.navigate().back();
+		a1.assertAll();
+	}
+	
+	
+}

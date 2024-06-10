@@ -1,0 +1,12 @@
+package co.edureka.java.exception;
+
+public class Except2 {
+
+	public static void main(String[] args) {
+		String str = "625";
+		System.out.println(str + 25);
+
+		int n = Integer.parseInt(str);
+	}
+
+}

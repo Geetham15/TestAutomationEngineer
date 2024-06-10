@@ -1,0 +1,4 @@
+INDEX VERSION 1.134+G:\TestAutomationEngineer\JavaJ2EE\.metadata\.plugins\org.eclipse.jdt.core
+3316466471.index
+1865797976.index
+3764259853.index

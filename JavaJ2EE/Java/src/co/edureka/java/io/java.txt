@@ -1,0 +1,4 @@
+Hi Edureka
+This is the simple text
+to read  the content
+from this file

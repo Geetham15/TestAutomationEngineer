@@ -1,0 +1,12 @@
+package co.edureka.java.exception;
+
+import java.util.Scanner;
+
+public class FinallyTest {
+
+	public static void main(String[] args) {
+		Scanner sc = new Scanner(System.in);
+
+	}
+
+}

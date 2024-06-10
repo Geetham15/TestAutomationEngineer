@@ -1,0 +1,24 @@
+package co.edureka.java.io;
+
+import java.io.FileInputStream;
+
+public class ReadFile {
+
+	public static void main(String[] args) throws Exception {
+		FileInputStream fin = new FileInputStream("src/co/edureka/java/io/java.txt");
+		/*
+		System.out.println("no of character to be read = "+ fin.available());
+		System.out.println(fin.read());
+		System.out.println(fin.read());
+		System.out.println("no of character to be read = "+ fin.available());
+		*/
+		// --read file contents character by character
+		int n = fin.read();
+		while( n != -1) {
+			System.out.println((char)n);n = fin.read();
+			Thread.sleep(100);
+		}
+		fin.close();
+	}
+
+}
