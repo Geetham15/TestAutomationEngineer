@@ -14,6 +14,7 @@ public class add_digits_of_a_number {
 		{
 			rem = x % 10;
 			sum = sum + rem;
+			System.out.println("rem " + rem + "sum " + sum + "x " + x);
 		}
 		System.out.println("Added digits of a number is "+sum);
 	}
